@@ -1,0 +1,10 @@
+.container {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 24px;
+  text-align: center;
+  font-family: 'Harry P', cursive;
+  background: #f0f8ff;
+  border-radius: 16px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
