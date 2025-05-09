@@ -1,17 +1,17 @@
 import axios from 'axios';
 
-const API_URL = 'https://your-mockapi-url.mockapi.io/contacts'; // заміни на свій
+axios.defaults.baseURL = 'https://680a26a51f1a52874cdf5dc7.mockapi.io';
 
 export const getContacts = async () => {
-  const response = await axios.get(API_URL);
+  const response = await axios.get('/contacts');
   return response.data;
 };
 
 export const postContact = async newContact => {
-  const response = await axios.post(API_URL, newContact);
+  const response = await axios.post('/contacts', newContact);
   return response.data;
 };
-
 export const deleteContactById = async id => {
-  await axios.delete(`${API_URL}/${id}`);
+  const response = await axios.delete(`/contacts/${id}`);
+  return response.data;
 };
